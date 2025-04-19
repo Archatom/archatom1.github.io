@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram 首頁</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- 導航欄 -->
+    <nav class="navbar navbar-light bg-white border-bottom sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="https://www.instagram.com" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+                <span>Instagram</span>
+            </a>
+            <div class="d-flex">
+                <button class="btn"><i class="fas fa-home"></i></button>
+                <button class="btn"><i class="far fa-paper-plane"></i></button>
+                <button class="btn"><i class="far fa-compass"></i></button>
+                <button class="btn"><i class="far fa-heart"></i></button>
+                <button class="btn">
+                    <div class="profile-pic-container">
+                        <img src="https://picsum.photos/200/300?random=1" alt="Profile" class="rounded-circle">
+                    </div>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container main-container">
+        <div class="row">
+            <!-- 主要內容區 -->
+            <div class="col-lg-8">
+                <!-- 限時動態區 -->
+                <div class="stories-container">
+                    <div class="stories-scroll" id="storiesScroll">
+                        <div class="story-item" onclick="alert('點擊了限時動態')">
+                            <div class="story-avatar">
+                                <div class="avatar-img-container">
+                                    <img src="https://picsum.photos/200/300?random=1" alt="用戶頭像" class="rounded-circle">
+                                </div>
+                            </div>
+                            <p class="story-username">你的限時</p>
+                        </div>
+                        <!-- 更多限時動態項目 -->
+                        <div class="story-item" onclick="alert('點擊了限時動態')">
+                            <div class="story-avatar">
+                                <div class="avatar-img-container">
+                                    <img src="https://picsum.photos/200/300?random=1" alt="用戶頭像" class="rounded-circle">
+                                </div>
+                            </div>
+                            <p class="story-username">user_1</p>
+                        </div>
+                        <div class="story-item" onclick="alert('點擊了限時動態')">
+                            <div class="story-avatar">
+                                <div class="avatar-img-container">
+                                    <img src="https://picsum.photos/200/300?random=1" alt="用戶頭像" class="rounded-circle">
+                                </div>
+                            </div>
+                            <p class="story-username">travel_love</p>
+                        </div>
+                        <div class="story-item" onclick="alert('點擊了限時動態')">
+                            <div class="story-avatar">
+                                <div class="avatar-img-container">
+                                    <img src="https://picsum.photos/200/300?random=1" alt="用戶頭像" class="rounded-circle">
+                                </div>
+                            </div>
+                            <p class="story-username">food_gram</p>
+                        </div>
+                        <div class="story-item" onclick="alert('點擊了限時動態')">
+                            <div class="story-avatar">
+                                <div class="avatar-img-container">
+                                    <img src="https://picsum.photos/200/300?random=1" alt="用戶頭像" class="rounded-circle">
+                                </div>
+                            </div>
+                            <p class="story-username">photo_pro</p>
+                        </div>
+                        <div class="story-item" onclick="alert('點擊了限時動態')">
+                            <div class="story-avatar">
+                                <div class="avatar-img-container">
+                                    <img src="https://picsum.photos/200/300?random=1" alt="用戶頭像" class="rounded-circle">
+                                </div>
+                            </div>
+                            <p class="story-username">art_design</p>
+                        </div>
+                        <div class="story-item" onclick="alert('點擊了限時動態')">
+                            <div class="story-avatar">
+                                <div class="avatar-img-container">
+                                    <img src="https://picsum.photos/200/300?random=1" alt="用戶頭像" class="rounded-circle">
+                                </div>
+                            </div>
+                            <p class="story-username">music_lover</p>
+                        </div>
+                        <div class="story-item" onclick="alert('點擊了限時動態')">
+                            <div class="story-avatar">
+                                <div class="avatar-img-container">
+                                    <img src="https://picsum.photos/200/300?random=1" alt="用戶頭像" class="rounded-circle">
+                                </div>
+                            </div>
+                            <p class="story-username">tech_news</p>
+                        </div>
+                        <div class="story-item" onclick="alert('點擊了限時動態')">
+                            <div class="story-avatar">
+                                <div class="avatar-img-container">
+                                    <img src="https://picsum.photos/200/300?random=1" alt="用戶頭像" class="rounded-circle">
+                                </div>
+                            </div>
+                            <p class="story-username">fitness_guru</p>
+                        </div>
+                        <div class="story-item" onclick="alert('點擊了限時動態')">
+                            <div class="story-avatar">
+                                <div class="avatar-img-container">
+                                    <img src="https://picsum.photos/200/300?random=1" alt="用戶頭像" class="rounded-circle">
+                                </div>
+                            </div>
+                            <p class="story-username">fitness_guru</p>
+                        </div>
+                        <div class="story-item" onclick="alert('點擊了限時動態')">
+                            <div class="story-avatar">
+                                <div class="avatar-img-container">
+                                    <img src="https://picsum.photos/200/300?random=1" alt="用戶頭像" class="rounded-circle">
+                                </div>
+                            </div>
+                            <p class="story-username">fitness_guru</p>
+                        </div>
+                    </div>
+                    <!-- 滾動按鈕 -->
+                    <button class="scroll-btn scroll-left" onclick="scrollStories('left')">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="scroll-btn scroll-right" onclick="scrollStories('right')">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+
+                <!-- 貼文區 -->
+                <div class="posts-container">
+                    <!-- 貼文 1 -->
+                    <div class="card post-card mb-4">
+                        <div class="card-header bg-white">
+                            <div class="d-flex align-items-center">
+                                <div class="user-avatar-container me-2">
+                                    <img src="https://picsum.photos/200/300?random=1" alt="頭像" class="rounded-circle">
+                                </div>
+                                <span class="fw-bold">user_1</span>
+                                <span class="ms-auto">
+                                    <i class="fas fa-ellipsis-h"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="post-image-container">
+                            <img src="https://picsum.photos/200/300?random=1" alt="貼文圖片">
+                        </div>
+                        <div class="card-body">
+                            <div class="post-actions mb-2">
+                                <button class="btn p-0 me-3"><i class="far fa-heart"></i></button>
+                                <button class="btn p-0 me-3"><i class="far fa-comment"></i></button>
+                                <button class="btn p-0 me-3"><i class="far fa-paper-plane"></i></button>
+                                <button class="btn p-0 ms-auto"><i class="far fa-bookmark"></i></button>
+                            </div>
+                            <p class="fw-bold mb-1">2,345 個讚</p>
+                            <p class="mb-1"><span class="fw-bold">user_1</span> 美麗的風景照 #旅行 #自然 #攝影</p>
+                            <p class="text-secondary">查看全部 128 則留言</p>
+                            <p class="text-secondary small">3 小時前</p>
+                        </div>
+                        <div class="card-footer bg-white">
+                            <div class="input-group">
+                                <span class="input-group-text bg-white border-0">
+                                    <i class="far fa-smile"></i>
+                                </span>
+                                <input type="text" class="form-control border-0" placeholder="新增留言...">
+                                <button class="btn text-primary fw-bold">發佈</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 貼文 2 -->
+                    <div class="card post-card mb-4">
+                        <div class="card-header bg-white">
+                            <div class="d-flex align-items-center">
+                                <div class="user-avatar-container me-2">
+                                    <img src="https://picsum.photos/200/300?random=1" alt="頭像" class="rounded-circle">
+                                </div>
+                                <span class="fw-bold">food_gram</span>
+                                <span class="ms-auto">
+                                    <i class="fas fa-ellipsis-h"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="post-image-container">
+                            <img src="https://picsum.photos/200/300?random=1" alt="貼文圖片">
+                        </div>
+                        <div class="card-body">
+                            <div class="post-actions mb-2">
+                                <button class="btn p-0 me-3"><i class="far fa-heart"></i></button>
+                                <button class="btn p-0 me-3"><i class="far fa-comment"></i></button>
+                                <button class="btn p-0 me-3"><i class="far fa-paper-plane"></i></button>
+                                <button class="btn p-0 ms-auto"><i class="far fa-bookmark"></i></button>
+                            </div>
+                            <p class="fw-bold mb-1">1,678 個讚</p>
+                            <p class="mb-1"><span class="fw-bold">food_gram</span> 今天的午餐！ #美食 #料理 #午餐</p>
+                            <p class="text-secondary">查看全部 86 則留言</p>
+                            <p class="text-secondary small">5 小時前</p>
+                        </div>
+                        <div class="card-footer bg-white">
+                            <div class="input-group">
+                                <span class="input-group-text bg-white border-0">
+                                    <i class="far fa-smile"></i>
+                                </span>
+                                <input type="text" class="form-control border-0" placeholder="新增留言...">
+                                <button class="btn text-primary fw-bold">發佈</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 貼文 3 (橫幅式圖片) -->
+                    <div class="card post-card mb-4">
+                        <div class="card-header bg-white">
+                            <div class="d-flex align-items-center">
+                                <div class="user-avatar-container me-2">
+                                    <img src="https://picsum.photos/200/300?random=1" alt="頭像" class="rounded-circle">
+                                </div>
+                                <span class="fw-bold">nature_pics</span>
+                                <span class="ms-auto">
+                                    <i class="fas fa-ellipsis-h"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="post-image-container">
+                            <img src="https://picsum.photos/200/300?random=1" alt="貼文圖片">
+                        </div>
+                        <div class="card-body">
+                            <div class="post-actions mb-2">
+                                <button class="btn p-0 me-3"><i class="far fa-heart"></i></button>
+                                <button class="btn p-0 me-3"><i class="far fa-comment"></i></button>
+                                <button class="btn p-0 me-3"><i class="far fa-paper-plane"></i></button>
+                                <button class="btn p-0 ms-auto"><i class="far fa-bookmark"></i></button>
+                            </div>
+                            <p class="fw-bold mb-1">3,421 個讚</p>
+                            <p class="mb-1"><span class="fw-bold">nature_pics</span> 壯觀的全景照 #風景 #地平線 #攝影</p>
+                            <p class="text-secondary">查看全部 153 則留言</p>
+                            <p class="text-secondary small">1 小時前</p>
+                        </div>
+                        <div class="card-footer bg-white">
+                            <div class="input-group">
+                                <span class="input-group-text bg-white border-0">
+                                    <i class="far fa-smile"></i>
+                                </span>
+                                <input type="text" class="form-control border-0" placeholder="新增留言...">
+                                <button class="btn text-primary fw-bold">發佈</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 側邊欄 -->
+            <div class="col-lg-4 d-none d-lg-block">
+                <div class="sidebar-container">
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="sidebar-avatar-container me-3">
+                            <img src="https://picsum.photos/200/300?random=1" alt="頭像" class="rounded-circle">
+                        </div>
+                        <div>
+                            <p class="fw-bold mb-0">your_username</p>
+                            <p class="text-secondary mb-0">您的名字</p>
+                        </div>
+                        <button class="btn text-primary ms-auto fw-bold">切換</button>
+                    </div>
+
+                    <div class="d-flex justify-content-between mb-3">
+                        <p class="text-secondary fw-bold mb-0">為您推薦</p>
+                        <a href="#" class="text-dark text-decoration-none small">查看全部</a>
+                    </div>
+
+                    <!-- 推薦用戶 -->
+                    <div class="recommended-users">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="recommend-avatar-container me-2">
+                                <img src="https://picsum.photos/200/300?random=1" alt="頭像" class="rounded-circle">
+                            </div>
+                            <div>
+                                <p class="mb-0 fw-bold small">recommended_1</p>
+                                <p class="mb-0 text-secondary small">為您推薦</p>
+                            </div>
+                            <button class="btn text-primary ms-auto fw-bold small">追蹤</button>
+                        </div>
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="recommend-avatar-container me-2">
+                                <img src="https://picsum.photos/200/300?random=1" alt="頭像" class="rounded-circle">
+                            </div>
+                            <div>
+                                <p class="mb-0 fw-bold small">recommended_2</p>
+                                <p class="mb-0 text-secondary small">為您推薦</p>
+                            </div>
+                            <button class="btn text-primary ms-auto fw-bold small">追蹤</button>
+                        </div>
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="recommend-avatar-container me-2">
+                                <img src="https://picsum.photos/200/300?random=1" alt="頭像" class="rounded-circle">
+                            </div>
+                            <div>
+                                <p class="mb-0 fw-bold small">recommended_3</p>
+                                <p class="mb-0 text-secondary small">為您推薦</p>
+                            </div>
+                            <button class="btn text-primary ms-auto fw-bold small">追蹤</button>
+                        </div>
+                    </div>
+
+                    <!-- 頁尾連結 -->
+                    <div class="footer-links mt-4">
+                        <p class="text-secondary small mb-2">
+                            關於 · 說明 · 媒體 · API · 工作機會 · 隱私權 · 條款 · 位置 · 語言
+                        </p>
+                        <p class="text-secondary small">© 2025 INSTAGRAM CLONE</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function scrollStories(direction) {
+            const container = document.getElementById('storiesScroll');
+            const scrollAmount = 300;
+
+            if (direction === 'left') {
+                container.scrollLeft -= scrollAmount;
+            } else {
+                container.scrollLeft += scrollAmount;
+            }
+
+            updateScrollButtons();
+        }
+
+        function updateScrollButtons() {
+            const container = document.getElementById('storiesScroll');
+            const leftBtn = document.querySelector('.scroll-left');
+            const rightBtn = document.querySelector('.scroll-right');
+
+            // 根據滾動位置顯示/隱藏按鈕
+            leftBtn.style.display = container.scrollLeft > 0 ? 'flex' : 'none';
+            rightBtn.style.display =
+                container.scrollLeft < (container.scrollWidth - container.clientWidth - 10) ? 'flex' : 'none';
+        }
+
+        // 初始化滾動按鈕狀態
+        document.addEventListener('DOMContentLoaded', function () {
+            updateScrollButtons();
+
+            // 監聽滾動事件來更新按鈕狀態
+            document.getElementById('storiesScroll').addEventListener('scroll', updateScrollButtons);
+        });
+    </script>
+</body>
+
+</html>
